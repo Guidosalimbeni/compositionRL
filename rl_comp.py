@@ -26,7 +26,7 @@ from keras.optimizers import sgd
 
 from capture import captureScreenUnity
 
-from directkeys import PressKey, ReleaseKey, W, A, S, D, NP_1, NP_2, NP_3, straight, left, right, reverse, select1, select2,select3
+from directkeys import PressKey, ReleaseKey, W, A, S, D, NP_1, NP_2, NP_3, straight, left, right, reverse, select1, select2,select3, select4, J, K, L, I
 
 from logicReward import CompositionAnalysis
 
@@ -107,8 +107,10 @@ class CompGame(object):
             select1()
         elif action == 5:
             select2()
-        else: 
+        elif action == 6:
             select3()
+        else: 
+            select4()
             
         
         reward = self._get_reward()
@@ -121,7 +123,7 @@ class CompGame(object):
         
         pass
 
-
+# 3w3ww31ddwww13dwwwww1ww4d2ws31dw4aws24a44a1ws1w33424w1sdwww2211s1aswsss234sw4ws21w4s32ws1ww4dww122a3wwa3w3www34wdwwsw1
 ###### continue from here...
 
 
@@ -166,7 +168,7 @@ if __name__ == "__main__":
     time.sleep(5)
     # parameters
     epsilon = .8  # exploration
-    num_actions = 7  # [move_left, stay, move_right, move back, select 1, selec2 , select3]
+    num_actions = 8  # [move_left, stay, move_right, move back, select 1, selec2 , select3]
     epoch = 100
     max_memory = 500
     hidden_size = 100

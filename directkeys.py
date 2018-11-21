@@ -20,6 +20,11 @@ NP_4 = 0x4B
 NP_6 = 0x4D
 NP_8 = 0x48
 
+J = 0x24
+K = 0x25
+L = 0x26
+I = 0x17
+
 
 # C struct redefinitions 
 PUL = ctypes.POINTER(ctypes.c_ulong)
@@ -73,9 +78,10 @@ def straight():
     ReleaseKey(A)
     ReleaseKey(D)
     ReleaseKey(S)
-    ReleaseKey(NP_1)
-    ReleaseKey(NP_2)
-    ReleaseKey(NP_3)
+    ReleaseKey(I)
+    ReleaseKey(L)
+    ReleaseKey(K)
+    ReleaseKey(J)
 
 
 def left():
@@ -83,9 +89,10 @@ def left():
     PressKey(A)
     ReleaseKey(S)
     ReleaseKey(D)
-    ReleaseKey(NP_1)
-    ReleaseKey(NP_2)
-    ReleaseKey(NP_3)
+    ReleaseKey(I)
+    ReleaseKey(L)
+    ReleaseKey(K)
+    ReleaseKey(J)
 
 def right():
 
@@ -93,41 +100,56 @@ def right():
     PressKey(D)
     ReleaseKey(A)
     ReleaseKey(S)
-    ReleaseKey(NP_1)
-    ReleaseKey(NP_2)
-    ReleaseKey(NP_3)
+    ReleaseKey(I)
+    ReleaseKey(L)
+    ReleaseKey(K)
+    ReleaseKey(J)
 
 def reverse():
     PressKey(S)
     ReleaseKey(A)
     ReleaseKey(W)
     ReleaseKey(D)
-    ReleaseKey(NP_1)
-    ReleaseKey(NP_2)
-    ReleaseKey(NP_3)
+    ReleaseKey(I)
+    ReleaseKey(L)
+    ReleaseKey(K)
+    ReleaseKey(J)
     
 def select1():
-    PressKey(NP_1)
-    ReleaseKey(NP_2)
-    ReleaseKey(NP_3)
+    PressKey(J)
+    ReleaseKey(K)
+    ReleaseKey(I)
+    ReleaseKey(L)
     ReleaseKey(A)
     ReleaseKey(W)
     ReleaseKey(D)
     ReleaseKey(S)
     
 def select2():
-    ReleaseKey(NP_1)
-    PressKey(NP_2)
-    ReleaseKey(NP_3)
+    ReleaseKey(I)
+    PressKey(K)
+    ReleaseKey(L)
+    ReleaseKey(J)
     ReleaseKey(A)
     ReleaseKey(W)
     ReleaseKey(D)
     ReleaseKey(S)
     
 def select3():
-    ReleaseKey(NP_1)
-    ReleaseKey(NP_2)
-    PressKey(NP_3)
+    ReleaseKey(I)
+    ReleaseKey(K)
+    PressKey(L)
+    ReleaseKey(J)
+    ReleaseKey(A)
+    ReleaseKey(W)
+    ReleaseKey(D)
+    ReleaseKey(S)
+
+def select4():
+    ReleaseKey(J)
+    ReleaseKey(K)
+    ReleaseKey(L)
+    PressKey(I)
     ReleaseKey(A)
     ReleaseKey(W)
     ReleaseKey(D)
