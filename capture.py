@@ -7,7 +7,7 @@ from screenGrab import grab_screen
 def captureScreenUnity():
 
     paused = False
-    print('STARTING!!!')
+    #print('STARTING!!!')
     while(True):
         if not paused:
             x = 420
@@ -20,13 +20,15 @@ def captureScreenUnity():
             screen = cv2.cvtColor(screen, cv2.COLOR_RGB2GRAY)
             screen = cv2.cvtColor(screen, cv2.COLOR_GRAY2BGR)
 
-            return screen
 # =============================================================================
+#             
 #             cv2.imshow('window',screen)
 #             if cv2.waitKey(25) & 0xFF == ord('q'):
 #                 cv2.destroyAllWindows()
 #                 break
 # =============================================================================
+            
+            return screen
 
 # =============================================================================
 # 

@@ -62,23 +62,24 @@ class CompGame(object):
         
 
         logicReward = CompositionAnalysis(captureScreenUnity())
-        maskForeground, visualScore, SlopeVisualBalance = logicReward.VisualBalanceForeground()
+        maskForeground, self.visualScore, SlopeVisualBalance = logicReward.VisualBalanceForeground()
     #• TODO implenent reward logic
-        if visualScore > 0.95:
-            visualScoreReward = 0.8
+        if self.visualScore > 0.80:
+            visualScoreReward = 0.5
 # =============================================================================
 #         elif visualScore > 0.80:
-#             visualScoreReward = 0.1
+#             visualScoreReward = - 0.005
 # =============================================================================
         else:
             visualScoreReward = -0.01
         
+        print (self.visualScore,visualScoreReward)
         return visualScoreReward
 
 
     def _is_over(self):
-        
-        if self._get_reward == 1:
+        if self.visualScore > 0.81:
+            print ("got 0.85 Visual Score")
             return True
         else:
             return False
@@ -194,6 +195,7 @@ if __name__ == "__main__":
     # Train
     win_cnt = 0
     for e in range(epoch):
+        print ("epoch number starts" + str(e))
         loss = 0.3
         env.reset()
         game_over = False
@@ -221,7 +223,6 @@ if __name__ == "__main__":
 
             # adapt model
             inputs, targets = exp_replay.get_batch(model, batch_size=batch_size)
-
             loss += model.train_on_batch(inputs, targets)
             # loss += model.train_on_batch(inputs, targets)[0]
         print("Epoch {:03d}/999 | Loss {:.4f} | Win count {}".format(e, loss, win_cnt))
