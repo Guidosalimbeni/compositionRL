@@ -5,3 +5,68 @@ Transforms position from world space into viewport space.
 
 Viewport space is normalized and relative to the camera. The bottom-left of the camera is (0,0); the top-right is (1,1). The z position is in world units from the camera.
 link: https://docs.unity3d.com/ScriptReference/Camera.WorldToViewportPoint.html
+
+
+
+# Sandex
+https://github.com/Sentdex/pygta5/tree/master/Versions/v0.03
+
+
+
+RL
+
+RL https://www.youtube.com/watch?v=oPGVsoBonLM list of youtube videod tutorial
+RL explaination blog post http://karpathy.github.io/2016/05/31/rl/
+http://www.argmin.net/2018/03/20/mujocoloco/ radom search phd rl 
+reinforcement learning rl phd https://github.com/keras-rl/keras-rl keras from udemy suggestion peiran https://github.com/dennybritz/reinforcement-learning 
+http://www.wildml.com/2017/12/ uber PhD rl reinforcement learning
+https://medium.com/@awjuliani/super-simple-reinforcement-learning-tutorial-part-1-fd544fab149 rl medium to read
+https://github.com/Pravez/ReImproveJS tensorflowjs q-learning rl js tensorflow
+http://adventuresinmachinelearning.com/reinforcement-learning-tutorial-python-keras/ rl unity ml-agents explenation plus keras https://keon.io/deep-q-learning/
+rl long but good explanation reinforcement learning keras https://towardsdatascience.com/reinforcement-learning-79ffd92886a7
+https://www.youtube.com/watch?v=lfHX2hHRMVQ&list=PL7-jPKtc4r78-wCZcQn5IqyuWhBZ8fOxT&index=2 reinforcement learning youtube video phd rl
+https://www.youtube.com/watch?v=Vz5l886eptw good tutorial on rl and tensor flow 
+rl https://www.youtube.com/watch?v=8LtpJDj3qdQ&index=19&list=PLZu8GD0ChvDz_lm8EuF7Xx_zzWx-IL8_u imitation learning and more tutorial unity3d unity phd
+https://medium.com/acing-ai/how-i-build-an-ai-to-play-dino-run-e37f37bdf153 unity3d rl reinforcement learning phd REINFORCEMENT LEARNING openai gym
+Multi agents rl keras https://github.com/keras-rl/keras-rl/issues/53 
+wait until a file is saved in pyhton https://stackoverflow.com/questions/21746750/check-and-wait-until-a-file-exists-to-read-it rl keras phd unity
+https://github.com/hasanavi/OpenCV-Unity3D-Object-Tracking/blob/master/README.md unity opencv python plugin code to try rl 
+unity ml-agents rl set reward add reward https://github.com/Unity-Technologies/ml-agents/issues/631 
+unreal python opencv ml rl https://mail.google.com/mail/u/0/#search/UnrealEnginePython/164a4179427b45a0
+q-learning in keras https://keon.io/deep-q-learning/ reinforcement learning
+http://www.argmin.net/2018/02/01/control-tour/ reinforcement learning phd summary for thesis
+http://pygame-learning-environment.readthedocs.io/en/latest/ pygame reinforcement learning phd https://stackoverflow.com/questions/45068568/is-it-possible-to-create-a-new-gym-environment-in-openai openai gym
+
+
+UNity
+https://medium.com/tensorflow/tf-jam-shooting-hoops-with-machine-learning-7a96e1236c32?linkId=54634097 ts.js tensor flow js JavaScript unity ml agents
+unity singleton https://www.youtube.com/watch?v=EI1KJv8owCg 
+procedural mesh generation in unity3d phd https://assetstore.unity.com/packages/tools/utilities/procedural-toolkit-16508
+unity3d https://www.youtube.com/watch?v=11GUuaeT0w4&list=PLhPNOL0P0EY1v3-KIn73kYlKHpnVzR7iC texture render
+https://stackoverflow.com/questions/36773599/passing-data-from-unity3d-to-c-dll-and-vice-versa unity3d passing camera view to image texture to python unity 
+UNITY socket https://stackoverflow.com/questions/42531691/connecting-unity-simulation-with-python-controller-over-tcp
+unity socket https://www.youtube.com/watch?v=v4cXuiZyJQ8 unity3d 
+UNITY unity https://stackoverflow.com/questions/38654628/minimalist-python-server-for-unity3d-5-x
+socket unity unity3d https://github.com/NumesSanguis/Basic-Unity3D-Python-server and newer approach https://github.com/NumesSanguis/FACSvatar 
+https://github.com/valkjsaaa/Unity-ZeroMQ-Example socket zeromq unity 
+socket https://stackoverflow.com/questions/36773599/passing-data-from-unity3d-to-c-dll-and-vice-versa passing image from unity to opencv https://stackoverflow.com/questions/49482647/convert-opencv-mat-to-texture2d  and https://stackoverflow.com/questions/47381893/passing-images-to-opencv-from-unity render texture unity3d image to socket  https://stackoverflow.com/questions/50888924/python-and-unity-video-streaming a broken code but conversion example  ... tutorial opencv nice one http://amin-ahmadi.com/2017/05/24/how-to-use-opencv-in-unity-example-project/
+socket unity image bytes send https://stackoverflow.com/questions/42717713/unity-live-video-streaming/42727918#42727918 unity3d
+UNITY opencv c++ https://thomasmountainborn.com/2017/03/05/unity-and-opencv-part-three-passing-detection-data-to-unity/ 
+
+
+code implementation
+
+
+https://medium.com/acing-ai/how-i-build-an-ai-to-play-dino-run-e37f37bdf153
+
+https://blog.paperspace.com/dino-run/
+
+https://github.com/Paperspace/DinoRunTutorial
+
+https://gist.github.com/cadurosar/bd54c723c1d6335a43c8
+
+http://edersantana.github.io/articles/keras_rl/
+
+https://ai.intel.com/demystifying-deep-reinforcement-learning/   theory!!!!
+
+https://gist.github.com/EderSantana/c7222daa328f0e885093

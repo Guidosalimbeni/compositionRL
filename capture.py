@@ -1,14 +1,10 @@
 import os, time, cv2
 import numpy as np
 from screenGrab import grab_screen
-from getkeys import key_check
+#from getkeys import key_check
 
 
-
-
-
-def main():
-
+def captureScreenUnity():
 
     paused = False
     print('STARTING!!!')
@@ -18,29 +14,35 @@ def main():
             y = 120
             screen = grab_screen(region = (x, y, 930 + x, 615 + y))
             # resize to something a bit more acceptable for a CNN
-            screen = cv2.resize(screen, (465, 307))
+            screen = cv2.resize(screen, (23, 15))
             # run a color convert:
             screen = cv2.cvtColor(screen, cv2.COLOR_BGR2RGB)
+            screen = cv2.cvtColor(screen, cv2.COLOR_RGB2GRAY)
+            screen = cv2.cvtColor(screen, cv2.COLOR_GRAY2BGR)
 
+            return screen
+# =============================================================================
+#             cv2.imshow('window',screen)
+#             if cv2.waitKey(25) & 0xFF == ord('q'):
+#                 cv2.destroyAllWindows()
+#                 break
+# =============================================================================
 
-##            print('loop took {} seconds'.format(time.time()-last_time))
+# =============================================================================
+# 
+#         keys = key_check()
+#         if 'T' in keys:
+#             if paused:
+#                 paused = False
+#                 print('Unpaused!')
+#                 time.sleep(1)
+#             else:
+#                 print('Pausing!')
+#                 paused = True
+#                 time.sleep(1)
+# =============================================================================
 
-            cv2.imshow('window',screen)
-            if cv2.waitKey(25) & 0xFF == ord('q'):
-                cv2.destroyAllWindows()
-                break
-
-
-        keys = key_check()
-        if 'T' in keys:
-            if paused:
-                paused = False
-                print('Unpaused!')
-                time.sleep(1)
-            else:
-                print('Pausing!')
-                paused = True
-                time.sleep(1)
-
-if __name__ == "__main__":
-    main()
+# =============================================================================
+# if __name__ == "__main__":
+#     captureScreenUnity()
+# =============================================================================
